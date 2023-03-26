@@ -19,6 +19,8 @@ import RootLayout from "./layouts/RootLayout";
 // Styles
 import "./assets/bootstrap/css/bootstrap.min.css";
 import "./assets/css/base.css";
+import { useEffect, useState } from "react";
+import HeroSection from "./components/HeroSection";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(

@@ -1,6 +1,6 @@
 import { useLoaderData, Link } from "react-router-dom";
 import data from "../../data/chemicals.json" assert { type: "JSON" };
-import WikiTerm from "../components/WikiTerms";
+import WikiTerm from "../components/WikiTerm";
 
 interface Substance {
 	id: number;
@@ -16,11 +16,13 @@ export default function Home() {
 	return (
 		<div>
 			<h1 className="libre-baskerville-font mt-5 mb-5">Carcinogens</h1>
+			<hr />
 			{substances.map((substance: Substance) => (
 				<WikiTerm
 					key={substance.id}
 					name={substance.name}
 					description={substance.description}
+					link={substance.url}
 				/>
 			))}
 		</div>

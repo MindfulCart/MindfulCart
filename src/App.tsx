@@ -24,11 +24,11 @@ import HeroSection from "./components/HeroSection";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path="/" element={<RootLayout />}>
-			<Route path="/" element={<Home />} />
-			<Route path="/wiki" element={<Wiki />} loader={wikiLoader} />
-			<Route path="/about" element={<About />} />
-			<Route path="/contact" element={<Contact />} />
+		<Route path="/mindfulcart" element={<RootLayout />}>
+			<Route path="/mindfulcart" element={<Home />} />
+			<Route path="/mindfulcart/wiki" element={<Wiki />} loader={wikiLoader} />
+			<Route path="/mindfulcart/about" element={<About />} />
+			<Route path="/mindfulcart/contact" element={<Contact />} />
 			<Route path="*" element={<Error404 />} />,
 		</Route>,
 	),

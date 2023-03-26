@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../../data/chemicals.json" assert { type: "JSON" };
 import WikiTerm from "../components/WikiTerm";
+import Container from "react-bootstrap/Container";
 
 interface Props {
 	name: string;
@@ -75,7 +76,7 @@ export default function HeroSection() {
 		<header id="header">
 			<div className="intro">
 				<div className="overlay">
-					<div className="container">
+					<Container fluid>
 						<div className="row">
 							<div className="col-md-12 intro-text mx-auto">
 								<h1 className="text-center green-color mb-4">
@@ -127,7 +128,7 @@ export default function HeroSection() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Container>
 				</div>
 			</div>
 		</header>

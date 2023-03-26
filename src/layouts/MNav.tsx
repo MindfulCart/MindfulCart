@@ -3,19 +3,26 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+<style>
+	@import
+	url('https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation:wght@700&family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@1,200&display=swap');
+</style>;
 
 export default function MNavbar() {
 	return (
 		<Navbar className="secondary-color shadow" expand="md">
 			<Container fluid>
-				<Navbar.Brand href="#">
-					<img
-						src="https://www.utsa.edu/_resources/images/utsa-logo.svg"
-						width="250"
-						height="100"
+				<Navbar.Brand className="px-4 pb-2" href="#">
+					{/**<img
+						src="src/assets/images/mindfulcart_logo.png"
+						width="50"
+						height="50"
 						className="d-inline-block align-text-top"
 						alt="MindfulCart Logo"
-					/>
+					/>**/}
+					<div className="libre-baskerville-font fs-2 text-white">
+						MindfulCart
+					</div>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav">
 					<Button
@@ -28,20 +35,25 @@ export default function MNavbar() {
 					</Button>
 				</Navbar.Toggle>
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="navbar-nav w-100 justify-content-center fs-3">
-						<Nav.Item>
+					<Nav className="navbar-nav w-100 h-20 fs-6 justify-content-center">
+						<Nav.Item className="mx-5">
 							<Nav.Link as={Link} to="/">
-								Home
+								HOME
 							</Nav.Link>
 						</Nav.Item>
-						<Nav.Item>
+						<Nav.Item className="mx-5">
 							<Nav.Link as={Link} to="/wiki">
-								Wiki
+								WIKI
 							</Nav.Link>
 						</Nav.Item>
-						<Nav.Item>
+						<Nav.Item className="mx-5">
 							<Nav.Link as={Link} to="/about">
-								About
+								ABOUT
+							</Nav.Link>
+						</Nav.Item>
+						<Nav.Item className="mx-5">
+							<Nav.Link as={Link} to="/contact">
+								CONTACT
 							</Nav.Link>
 						</Nav.Item>
 					</Nav>

@@ -40,6 +40,15 @@
   visibility: visible;
 }
 
+.nav-link-margin {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.libre-baskerville-font {
+  font-family: "Libre Baskerville", serif;
+}
+
 .middle-bar {
   margin-top: 0px;
 }
@@ -91,5 +100,13 @@
 }
 
 .secondary-color {
-  background-color: #C6CAED;
+  background-color: #085a91;
+}
+
+.purple-color {
+  background-color: #d4e3f9;
+}
+
+.green-color {
+  color: #03746e;
 }/*# sourceMappingURL=base.css.map */

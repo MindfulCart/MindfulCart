@@ -1,5 +1,7 @@
 import { useLoaderData, Link } from "react-router-dom";
 import data from "../../data/chemicals.json" assert { type: "JSON" };
+import WikiTerm from "../components/WikiTerms";
+
 interface Substance {
 	id: number;
 	name: string;
@@ -12,11 +14,14 @@ export default function Home() {
 	const substances: Substance[] = useLoaderData() as Substance[];
 	console.log(substances);
 	return (
-		<div className="mt-5">
-			<h3>Carcinogens</h3>
-
+		<div>
+			<h1 className="libre-baskerville-font mt-5 mb-5">Carcinogens</h1>
 			{substances.map((substance: Substance) => (
-				<h4>{substance.name}</h4>
+				<WikiTerm
+					key={substance.id}
+					name={substance.name}
+					description={substance.description}
+				/>
 			))}
 		</div>
 	);

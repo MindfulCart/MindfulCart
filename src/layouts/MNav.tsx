@@ -13,14 +13,14 @@ export default function MNavbar() {
 		<Navbar className="secondary-color shadow" expand="md">
 			<Container fluid>
 				<Navbar.Brand className="px-4 pb-2" href="#">
-					{/**<img
-						src="src/assets/images/mindfulcart_logo.png"
-						width="50"
-						height="50"
-						className="d-inline-block align-text-top"
-						alt="MindfulCart Logo"
-					/>**/}
 					<div className="libre-baskerville-font fs-2 text-white">
+						<img
+							src="src/assets/images/mindfulcart_logo.png"
+							width="40"
+							height="40"
+							className="d-inline-block align-text-top me-2"
+							alt="MindfulCart Logo"
+						/>
 						MindfulCart
 					</div>
 				</Navbar.Brand>

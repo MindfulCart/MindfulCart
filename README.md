@@ -1,6 +1,6 @@
 # MinfulCart <img src="https://github.com/MindfulCart/MindfulCart_Extension/blob/main/assets/mindfulcart_small.png" alt="c" width="40" height="40"/>
 
-## Extensio Repo Link: https://github.com/MindfulCart/MindfulCart_Extension/
+## Extension Repo Link: https://github.com/MindfulCart/MindfulCart_Extension/
 
 # Table of contents
 1. [Project Description](#Description)
